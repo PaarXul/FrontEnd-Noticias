@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {SortDirection} from "@angular/material/sort";
 import {Observable} from "rxjs";
+import {content} from "../model/content";
 
 @Injectable({
   providedIn: 'root'
@@ -24,9 +25,9 @@ export class FavoritasService {
   }
 
 
-  public postFavorite(id: string): Observable<any> {
-    const href = 'http://localhost:8081/favoritos';
-    return this.http.post(`${href}/${id}`, {});
+  public postFavorite(content : any []): Observable<any> {
+    const href = 'http://localhost:8081/favoritos/';
+    return this.http.post(`${href}`, content);
   }
 
   public deleteFavorite(id: Number): Observable<any> {
