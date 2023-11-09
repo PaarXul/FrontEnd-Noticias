@@ -29,9 +29,7 @@ import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { MatTableExporterModule } from 'mat-table-exporter';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ViewFavoritasComponent } from './pages/noticiasFavoritas/view-favoritas/view-favoritas.component';
-import { DetailsFavoritasComponent } from './pages/noticiasFavoritas/details-favoritas/details-favoritas.component';
 import { ViewNuevasComponent } from './pages/noticiasNuevas/view-nuevas/view-nuevas.component';
-import { DetailsNuevasComponent } from './pages/noticiasNuevas/details-nuevas/details-nuevas.component';
 import {MatPaginator, MatPaginatorModule} from "@angular/material/paginator";
 import {MatTabsModule} from "@angular/material/tabs";
 
@@ -40,9 +38,7 @@ import {MatTabsModule} from "@angular/material/tabs";
     AppComponent,
     NavbarComponent,
     ViewFavoritasComponent,
-    ViewNuevasComponent,
-    DetailsFavoritasComponent,
-    DetailsNuevasComponent
+    ViewNuevasComponent
   ],
     imports: [
         BrowserModule,
