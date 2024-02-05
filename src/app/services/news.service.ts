@@ -21,6 +21,4 @@ export class NewsService {
     }
     return this.http.get(`${href}?limit=${pageOptions}&offset=${resultadoIndex}&ordering=${order2}${sort}&search=${Search}`);
   }
-
-
 }
